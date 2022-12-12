@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, rgba(255,255,255,0.623686974789916) 0%, rgba(241,252,255,1) 43%, rgba(243,196,255,0.6460959383753502) 71%, rgba(196,245,255,0.6460959383753502) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+}
+
+.main-container {
+    width: 1734px;
+    height: 915px;
+    background-color: rgba(255, 255, 255, 0.252);
+    border-radius: 35px;
+    box-shadow: 3px 5px 23px rgba(0, 0, 0, 0.1);
+    backdrop-filter: 17px;
+    border: 5px solid white;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    min-height: 10vh;
+    align-items: center;
+    margin: 0 5rem;
+}
+
+.navigation .nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    font-weight: 800;
+}
+
+.nav-items li{
+    margin: 0 2.5rem;
+}
+
+.nav-items a{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    
+}
+
+.section-main {
+    display: flex;
+    margin: 6rem 5rem;
+
+}
+
+.section-main .left-content p {
+    padding: 2rem;
+}
+
+.section-main .left-content h1 {
+    font-size: 5rem;
+}
+
+.section-main .left-content {
+    width: 100%;
+}
+
+.section-main .right-content {
+    width: 100%;
+    position: relative;
+}
+
+.section-main .right-content .images-con {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-7%);
+}
+
+.shopper {
+    position: absolute;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%);
+}
+
+.dots {
+    width: 1rem;
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.dots-1, .dots-2, .dots-3 {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: red;
+    margin: .6rem 0;
+    cursor: pointer;
+}
+
+.dots-1 {
+    background-color: #ef4da8;
+}
+
+.dots-2, .dots-3 {
+    background-color: white;
+    border: 1px solid #ef4da8;
+}
+
+.h-btn {
+    color: #ef4da8;
+    margin-top: 3rem;
+    display: inline-block;
+}
