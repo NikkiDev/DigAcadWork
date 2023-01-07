@@ -63,27 +63,28 @@ a:hover{
 
 .navLink{
     position: relative;
+
 }
 
-.navLinkActive{
-    position: relative;
-}
-
-.navLinkActive a{
-    color: black;
-}
-
-
-.navLinkActive::after{
+.navLink::after{
     content: "";
 
     position: absolute;
-    bottom: -52px;
     left: 0;
+    bottom: -52px;
     height: 4px;
-    width: 100%;
-    background-color: orange;
+    width: 0%;
+    background-color: #FF7D1A;
+    
+    transition: all .3s;
 }
+
+.navLink:hover::after{
+    width: 100%;
+}
+
+
+
 
 .purchaseProfile{
     display: flex;
@@ -117,6 +118,10 @@ a:hover{
 .sneakersPhotos{
     display: flex;
     justify-content: space-between;
+}
+
+.mainPhoto{
+    cursor: pointer;
 }
 
 .sneakersPhotosPointer {
