@@ -94,6 +94,10 @@ a:hover{
     gap: 40px;
 }
 
+.purschase, .profile {
+    cursor:pointer;
+}
+
 .storkeShadow {
     opacity: 5%;
     border-top: 2px solid black;
